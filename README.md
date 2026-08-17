@@ -125,12 +125,12 @@ to_do_app/
 
 ## 🗺️ Roadmap & Future Enhancements
 
-- [ ] 🌓 **Dark Mode / Dynamic Themes**
-- [ ] ✏️ **Edit & Update Existing Tasks**
+- [x] 🌓 **Dark Mode / Dynamic Themes**
+- [x] ✏️ **Edit & Update Existing Tasks**
+- [x] 🏷️ **Priority Flags** (High / Medium / Low)
+- [x] ↩️ **Undo Delete SnackBar Action**
+- [x] 🔍 **Search & Category Filters**
 - [ ] 📅 **Due Dates & Time Reminders**
-- [ ] 🏷️ **Priority Flags** (High / Medium / Low)
-- [ ] ↩️ **Undo Delete SnackBar Action**
-- [ ] 🔍 **Search & Category Filters**
 
 ---
 

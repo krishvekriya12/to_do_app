@@ -1,4 +1,4 @@
-import 'package:hive_flutter/adapters.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
 class ToDoDataBase {
   List toDoList = [];
@@ -6,16 +6,35 @@ class ToDoDataBase {
 
   void createInitialData() {
     toDoList = [
-      ["Make Tutorial", false],
-      ["Do Code", false],
+      ["Make Tutorial", false, "High"],
+      ["Do Code", false, "Medium"],
     ];
   }
 
   void loadData() {
-    toDoList = _myBox.get('TODOLIST');
+    final rawData = _myBox.get('TODOLIST');
+    if (rawData != null) {
+      toDoList = List.from(rawData.map((item) {
+        if (item is List) {
+          final name = item.isNotEmpty ? item[0] : "";
+          final completed = item.length > 1 ? item[1] : false;
+          final priority = item.length > 2 ? item[2] : "Medium";
+          return [name, completed, priority];
+        }
+        return item;
+      }));
+    }
   }
 
   void updateDataBase() {
     _myBox.put("TODOLIST", toDoList);
+  }
+
+  bool getThemeMode() {
+    return _myBox.get('DARK_MODE', defaultValue: false);
+  }
+
+  void saveThemeMode(bool isDark) {
+    _myBox.put('DARK_MODE', isDark);
   }
 }
