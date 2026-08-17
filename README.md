@@ -11,7 +11,7 @@
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
   <p align="center">
-    <a href="#-screenshots-gallery">Screenshots</a> •
+    <a href="#-screenshots-showcase">Screenshots</a> •
     <a href="#-key-features">Key Features</a> •
     <a href="#-technical-deep-dive--what-why--how">Deep Dive & Architecture</a> •
     <a href="#-project-structure">Project Structure</a> •
@@ -22,27 +22,50 @@
 
 ---
 
-## 📱 Screenshots Gallery
+## 📱 Screenshots Showcase
+
+### ☀️ Light Theme Experience
 
 <div align="center">
   <table>
     <tr>
-      <td align="center"><b>☀️ Light Theme UI</b></td>
-      <td align="center"><b>🌙 Dark Theme UI</b></td>
-      <td align="center"><b>➕ Priority Dialog</b></td>
+      <td align="center"><b>🏠 Light Home Screen</b></td>
+      <td align="center"><b>➕ Add / Edit Dialog</b></td>
       <td align="center"><b>🗑️ Swipe Gestures</b></td>
     </tr>
     <tr>
-      <td><img src="screenshots/home_light.png" width="195" alt="Light Mode Screen" /></td>
-      <td><img src="screenshots/home_dark.png" width="195" alt="Dark Mode Screen" /></td>
-      <td><img src="screenshots/add_task_dialog.png" width="195" alt="Add Task Dialog" /></td>
-      <td><img src="screenshots/swipe_delete.png" width="195" alt="Swipe Delete" /></td>
+      <td><img src="screenshots/light_home.png" width="220" alt="Light Home Screen" /></td>
+      <td><img src="screenshots/light_add_dialog.png" width="220" alt="Light Add Task Dialog" /></td>
+      <td><img src="screenshots/swipe_delete.png" width="220" alt="Light Swipe Delete" /></td>
     </tr>
     <tr>
-      <td align="center"><em>Pastel yellow aesthetic with search & filter chips</em></td>
-      <td align="center"><em>High-contrast AMOLED dark mode</em></td>
-      <td align="center"><em>Priority choice chips (High, Med, Low)</em></td>
-      <td align="center"><em>Smooth swipe to edit & delete</em></td>
+      <td align="center"><em>Pastel yellow with search & filter chips</em></td>
+      <td align="center"><em>Priority selection (High, Med, Low)</em></td>
+      <td align="center"><em>Smooth gesture-driven deletion</em></td>
+    </tr>
+  </table>
+</div>
+
+---
+
+### 🌙 Dark Theme Experience
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><b>🏠 Dark Home Screen</b></td>
+      <td align="center"><b>➕ Dark Add / Edit Dialog</b></td>
+      <td align="center"><b>⚡ Search & Filter State</b></td>
+    </tr>
+    <tr>
+      <td><img src="screenshots/dark_home.png" width="220" alt="Dark Home Screen" /></td>
+      <td><img src="screenshots/dark_add_dialog.png" width="220" alt="Dark Add Task Dialog" /></td>
+      <td><img src="screenshots/dark_home.png" width="220" alt="Dark Filtered Screen" /></td>
+    </tr>
+    <tr>
+      <td align="center"><em>High-contrast AMOLED dark theme</em></td>
+      <td align="center"><em>Dark mode task creation with priority</em></td>
+      <td align="center"><em>Dynamic category counter badges</em></td>
     </tr>
   </table>
 </div>
@@ -51,7 +74,7 @@
 
 ## 📖 Project Overview
 
-This project is a modern, responsive, and resilient **To-Do Task Management Application** designed in **Flutter (Dart)**. It utilizes **Hive NoSQL** for instant offline-first persistence, incorporates **Material 3 dynamic theming (Light / Dark)**, and features gesture-driven list manipulation with **Flutter Slidable**.
+This application is a modern, responsive, and robust **To-Do Task Management Application** designed in **Flutter (Dart)**. It utilizes **Hive NoSQL** for instant offline-first persistence, incorporates **Material 3 dynamic theming (Light / Dark)**, and features gesture-driven list manipulation with **Flutter Slidable**.
 
 ---
 
